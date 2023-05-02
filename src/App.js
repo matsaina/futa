@@ -1,25 +1,51 @@
-import logo from './logo.svg';
-import './App.css';
+import "bootstrap/dist/css/bootstrap.css";
+import Table from "./components/Table";
+import SideBar from "./components/SideBar";
+import NavBar from "./components/NavBar";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  return <div>
+
+
+
+<NavBar />
+
+
+
+    <div className="container-fluid">
+      <div className="row">
+      
+      
+ 
+<SideBar />
+
+
+
+
+
+
+        <main role="main" className="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+          <div className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
+            <h1 className="h2">All Games</h1>
+ 
+          </div>
+
+<Table />
+
+
+         
+
+
+
+        </main>
+      </div>
     </div>
-  );
+
+
+
+
+
+  </div>;
 }
 
 export default App;
